@@ -7,13 +7,18 @@ export default function App() {
     <div>
       {/* <h1 className="test">Hello StackBlitz!</h1> */}
       <Heading />
+      <Title />
+    <h2>{
+number
+      }</h2>  
       <p>Start editing to see some magic happen :)</p>
     </div>
   );
 }
 
+const number=1000;
 // react element
-const heading = <h1 className="heading"></h1>;
+const heading = <h1 className="test"></h1>;
 
 // react component Heading
 const Heading = () => {
@@ -21,6 +26,6 @@ const Heading = () => {
 };
 
 
-const title=()=>(
+const Title=()=>(
   <h1>this is title</h1>
 )
