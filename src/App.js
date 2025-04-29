@@ -7,9 +7,14 @@ export default function App() {
     <div>
       {/* <h1 className="test">Hello StackBlitz!</h1> */}
       <Heading />
-      <Title />
+      {/* or */}
+      or
+      {Heading()}
+      or 
+      <Heading></Heading>
+       {/*<Title /> */}
     <h2>{
-number
+title
       }</h2>  
       <p>Start editing to see some magic happen :)</p>
     </div>
@@ -25,7 +30,8 @@ const Heading = () => {
   return <h1>Heading Functional Component</h1>;
 };
 
+const elem=<span>React Element</span>
+const title=(
+  <h1>this is title element  & {elem}</h1>
+);
 
-const Title=()=>(
-  <h1>this is title</h1>
-)
