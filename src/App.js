@@ -19,3 +19,8 @@ const heading = <h1 className="heading"></h1>;
 const Heading = () => {
   return <h1>Heading Functional Component</h1>;
 };
+
+
+const title=()=>(
+  <h1>this is title</h1>
+)
