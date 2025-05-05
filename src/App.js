@@ -52,9 +52,13 @@ const Header=()=>{
     </div>
   )
 }
+
+// const StyleCard={
+//  backgroundColor:"#F0F0F0"
+// }
 const RestaurantCard=()=>{
   return (
-    <div className='res-card'>
+    <div className='res-card' style={{backgroundColor:"#F0F0F0"}}>
       <h3>Meghana Foods</h3>
       <div>
 
