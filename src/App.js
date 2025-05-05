@@ -11,6 +11,8 @@ Body
   -Search
   -Restaurantcontaniner
     -restaurant cards
+      -img
+      -name,star rating,cuisines delivery time
 
 Footer
   -copyright
@@ -50,9 +52,33 @@ const Header=()=>{
     </div>
   )
 }
+const RestaurantCard=()=>{
+  return (
+    <div className='res-card'>
+      <h3>Meghana Foods</h3>
+      <div>
+
+      </div>
+    </div>
+  )
+}
+
+const Body=()=>{
+
+  return (
+    <div className='body'>
+      <div className='search'>Search</div>
+      <div className='res-container'>
+        {/* Rstaurnatcard */}
+        <RestaurantCard />
+
+      </div>
+    </div>
+  )
+}
 
 
-
+ 
 
 
 
@@ -61,6 +87,7 @@ export default function App() {
   return (
     <div className="app">
       <Header></Header>
+      <Body />
       </div>
   );
 }

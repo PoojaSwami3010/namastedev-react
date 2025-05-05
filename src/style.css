@@ -13,11 +13,18 @@ p {
 .logo{
   width:100px;
   padding: 0px 20px;
+  height: 90px;
+}
+
+.nav-items{
+  padding: 10px;
+  display: flex ;
+  justify-content: center;
 }
 
 .nav-items > ul{
   display: flex;
-  padding: 0px 20px;
+  padding: 0px 24px;
   list-style: none;
 font-size: 14px;
 }
@@ -27,4 +34,13 @@ font-size: 14px;
   margin: 10px;
   
 
+}
+
+.res-card{
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
+.search{
+  padding: 10px;
 }
