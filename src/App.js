@@ -59,10 +59,13 @@ const Header=()=>{
 const RestaurantCard=()=>{
   return (
     <div className='res-card' style={{backgroundColor:"#F0F0F0"}}>
+       <img className='res-logo' height={95} alt="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vkhcohhmqfczycw9vsar"></img>
       <h3>Meghana Foods</h3>
-      <div>
-
-      </div>
+    <h4>
+    Biryani, North Indian, Asian
+    </h4>
+    <h4>4.4 stars</h4>
+    <h4>38 minutes</h4>
     </div>
   )
 }
@@ -75,7 +78,13 @@ const Body=()=>{
       <div className='res-container'>
         {/* Rstaurnatcard */}
         <RestaurantCard />
-
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
       </div>
     </div>
   )
