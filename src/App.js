@@ -63,17 +63,18 @@ const RestaurantCard=(props)=>{
   // console.log(props)
   const {resData}=props;
 //   console.log('resData',resData)
+const {name,cloudinaryImageId,cuisines,avgRating,costForTwo,sla}=resData?.info
 
   return (
     <div className='res-card' style={{backgroundColor:"#F0F0F0"}}>
-       <img className='res-logo' height={95} alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId}></img>
-      <h3>{resData.info.name}</h3>
+       <img className='res-logo' height={95} alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}></img>
+      <h3>{name}</h3>
     <h4>
-    {resData.info.cuisines.join(", ")}
+    {cuisines.join(", ")}
     </h4>
-    <h4>{resData.info.avgRating}</h4>
-    <h4>{resData.info.costForTwo}</h4>
-    <h4>{resData.info.sla.deliveryTime} minutes</h4>
+    <h4>{avgRating}</h4>
+    <h4>{costForTwo}</h4>
+    <h4>{sla.deliveryTime} minutes</h4>
     </div>
   )
 }
@@ -86,8 +87,8 @@ const Body=()=>{
       <div className='res-container'>
         {/* Rstaurnatcard */}
           {
-            resList.map((item)=>{
-                return <RestaurantCard resData={item}/>
+            resList.map((item,index)=>{
+                return <RestaurantCard resData={item} key={index}/>
             })
           }    
                   
