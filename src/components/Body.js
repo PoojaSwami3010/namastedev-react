@@ -5,21 +5,21 @@ import resList from '../utils/mockData'
 
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
+  const listOfRestaurant=[{
+    
+  }]
 
     return (
       <div className='body'>
-        <div className='search'>Search</div>
+        <div className='filter'>
+          <button className="filter-btn" onClick={()=>{console.log("button clicked")}} >Top Rated Restaurants</button>
+        </div>
         <div className='res-container'>
           {/* Rstaurnatcard */}
-            {
-              resList.map((item)=>
-                  <RestaurantCard key={item.info.id} resData={item} />
-              )
+            {              listOfRestaurant.map((item)=>
+                  <RestaurantCard key={item.info.id} resData={item} />              )
             }    
-                    
-          {/* <RestaurantCard resName="Pizz hut foods" cusine="pizza burger"/> */}
-         
-        </div>
+                     </div>
       </div>
     )
   }
