@@ -79,6 +79,7 @@ const {name,cloudinaryImageId,cuisines,avgRating,costForTwo,sla}=resData?.info
   )
 }
 
+// not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
 
   return (
@@ -87,9 +88,9 @@ const Body=()=>{
       <div className='res-container'>
         {/* Rstaurnatcard */}
           {
-            resList.map((item,index)=>{
-                return <RestaurantCard resData={item} key={index}/>
-            })
+            resList.map((item)=>
+                <RestaurantCard key={item.info.id} resData={item} />
+            )
           }    
                   
         {/* <RestaurantCard resName="Pizz hut foods" cusine="pizza burger"/> */}
