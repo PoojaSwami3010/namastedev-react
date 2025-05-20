@@ -6,7 +6,7 @@ import resList from '../utils/mockData'
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
   const listOfRestaurant=[{
-    
+
   }]
 
     return (
@@ -16,8 +16,8 @@ const Body=()=>{
         </div>
         <div className='res-container'>
           {/* Rstaurnatcard */}
-            {              listOfRestaurant.map((item)=>
-                  <RestaurantCard key={item.info.id} resData={item} />              )
+            {              resList.map((item)=>
+                  <RestaurantCard key={item?.info?.id} resData={item} />              )
             }    
                      </div>
       </div>
