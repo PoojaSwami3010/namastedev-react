@@ -28,7 +28,7 @@ console.log("header render")
               Cart
               </li>
               <button className='login' onClick={()=>{
-               setBtnNameReact('Logout')
+            btnNameReact==='Login'?   setBtnNameReact('Logout'):setBtnNameReact('Login')
                 console.log(btnNameReact)}}>{btnNameReact}</button>
           </ul>
   
