@@ -32,13 +32,14 @@ const featchData=async ()=>{
   setListOfRestaurant(resList);
 }
 
-if(listOfRestaurant.length===0){
-  return <Shimmer/>
-}
+// conditional rendering (rendering on bases of condition)
+// if(listOfRestaurant.length===0){
+//   return <Shimmer/>
+// }
 
 console.log("body rendered")
 
-    return (
+    return listOfRestaurant.length===0 ? (<Shimmer/>):(
       <div className='body'>
         <div className='filter'>
           <button className="filter-btn" onClick={()=>{
