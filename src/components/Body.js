@@ -18,7 +18,7 @@ useEffect(()=>{
     // });
     // console.log("count",count)
    
-  console.log("use effect callback function")
+  // console.log("use effect callback function")
   featchData();
 },[]);
 
@@ -37,7 +37,7 @@ const featchData=async ()=>{
 //   return <Shimmer/>
 // }
 
-console.log("body rendered")
+// console.log("body rendered")
 
     return listOfRestaurant.length===0 ? (<Shimmer/>):(
       <div className='body'>
@@ -45,7 +45,7 @@ console.log("body rendered")
           <button className="filter-btn" onClick={()=>{
           
             const filteredList=listOfRestaurant.filter((res)=>res.info.avgRating>4)
-            console.log("button listOfRestaurant",filteredList)
+            // console.log("button listOfRestaurant",filteredList)
             setListOfRestaurant(filteredList);
             }} >Top Rated Restaurants</button>
         </div>
