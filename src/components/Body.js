@@ -9,6 +9,9 @@ const Body=()=>{
 
   //local state variable -powerful variable update it using setListofRestaurant
 const [listOfRestaurant,setListOfRestaurant]=useState([]);
+const [searchText,setSearchText]=useState('')
+// console.log("body rendered")
+
 useEffect(()=>{
 
     
@@ -37,11 +40,24 @@ const featchData=async ()=>{
 //   return <Shimmer/>
 // }
 
-// console.log("body rendered")
+
 
     return listOfRestaurant.length===0 ? (<Shimmer/>):(
       <div className='body'>
         <div className='filter'>
+          <div className="search">
+            <input typy="text" className="serach-box" 
+            value={searchText} 
+            onChange={(e)=>{
+                setSearchText(e.target.value)
+            }}/>
+            <button onClick={()=>{
+              // filter res cards and update ui
+              const filteredList1=listOfRestaurant.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
+                console.log(filteredList1)
+                setListOfRestaurant(filteredList1)
+            }}>Search</button>
+          </div>
           <button className="filter-btn" onClick={()=>{
           
             const filteredList=listOfRestaurant.filter((res)=>res.info.avgRating>4)

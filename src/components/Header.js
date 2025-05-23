@@ -7,7 +7,7 @@ const Header=()=>{
 
 
 const [btnNameReact,setBtnNameReact]=useState('Login');
-console.log("header render")
+// console.log("header render")
 
     return (
       <div className='header'>
