@@ -9,6 +9,7 @@ const Body=()=>{
 
   //local state variable -powerful variable update it using setListofRestaurant
 const [listOfRestaurant,setListOfRestaurant]=useState([]);
+const [filteredList,setFilteredList]=useState([])
 const [searchText,setSearchText]=useState('')
 // console.log("body rendered")
 
@@ -33,6 +34,7 @@ const featchData=async ()=>{
   // console.log("json",json1)
   // optional chanining
   setListOfRestaurant(resList);
+  setFilteredList(resList);
 }
 
 // conditional rendering (rendering on bases of condition)
@@ -54,8 +56,8 @@ const featchData=async ()=>{
             <button onClick={()=>{
               // filter res cards and update ui
               const filteredList1=listOfRestaurant.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
-                console.log(filteredList1)
-                setListOfRestaurant(filteredList1)
+                // console.log(filteredList1)
+                setFilteredList(filteredList1)
             }}>Search</button>
           </div>
           <button className="filter-btn" onClick={()=>{
@@ -67,7 +69,7 @@ const featchData=async ()=>{
         </div>
         <div className='res-container'>
           {/* Rstaurnatcard */}
-            {              listOfRestaurant.map((item)=>
+            {              filteredList.map((item)=>
                   <RestaurantCard key={item?.info?.id} resData={item} />              )
             }    
                      </div>
