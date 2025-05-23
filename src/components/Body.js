@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import RestaurantCard  from './RestaurantCard'
 import resList from '../utils/mockData'
 
@@ -8,6 +8,26 @@ const Body=()=>{
 
   //local state variable -powerful variable update it using setListofRestaurant
 const [listOfRestaurant,setListOfRestaurant]=useState(resList);
+useEffect(()=>{
+
+    
+    var count = {};
+    'aabbbgghye'.split('').forEach(function(s) {
+       count[s] ? count[s]++ : count[s] = 1;
+    });
+    console.log("count",count)
+   
+  console.log("use effect callback function")
+  featchData();
+},[]);
+
+const featchData=async ()=>{
+  const data =await fetch(''
+
+  );
+}
+
+console.log("body rendered")
 
     return (
       <div className='body'>
