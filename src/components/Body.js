@@ -1,30 +1,39 @@
 import React, { useEffect, useState } from "react"
 import RestaurantCard  from './RestaurantCard'
 import resList from '../utils/mockData'
+import Shimmer from './Shimmer'
 
 
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
 
   //local state variable -powerful variable update it using setListofRestaurant
-const [listOfRestaurant,setListOfRestaurant]=useState(resList);
+const [listOfRestaurant,setListOfRestaurant]=useState([]);
 useEffect(()=>{
 
     
-    var count = {};
-    'aabbbgghye'.split('').forEach(function(s) {
-       count[s] ? count[s]++ : count[s] = 1;
-    });
-    console.log("count",count)
+    // var count = {};
+    // 'aabbbgghye'.split('').forEach(function(s) {
+    //    count[s] ? count[s]++ : count[s] = 1;
+    // });
+    // console.log("count",count)
    
   console.log("use effect callback function")
   featchData();
 },[]);
 
 const featchData=async ()=>{
-  const data =await fetch(''
+  // here need to call one api and set data to list
+  // const data =await fetch();
+  // const json1=await data.json();
 
-  );
+  // console.log("json",json1)
+  // optional chanining
+  setListOfRestaurant(resList);
+}
+
+if(listOfRestaurant.length===0){
+  return <Shimmer/>
 }
 
 console.log("body rendered")
