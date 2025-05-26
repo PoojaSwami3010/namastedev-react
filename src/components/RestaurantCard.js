@@ -18,7 +18,7 @@ import { CDN_URL } from "../utils/constants";
           </h4>
           <h4>{avgRating}</h4>
           <h4>{costForTwo}</h4>
-          <h4>{sla.deliveryTime} minutes</h4>
+          <h4>{sla.slaString} </h4>
           </div>
         )
       }
