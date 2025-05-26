@@ -28,7 +28,7 @@ useEffect(()=>{
 
 const featchData=async ()=>{
   // here need to call one api and set data to list
-  // const data =await fetch();
+  // const data =await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
   // const json1=await data.json();
 
   // console.log("json",json1)

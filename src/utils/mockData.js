@@ -1,776 +1,909 @@
-const resList=  [
-    {
-        "info": {
-            "id": "234875",
-            "name": "Adil Hotel",
-            "cloudinaryImageId": "gp1ityra6utvzqn6ghnv",
-            "locality": "Rautha Wada",
-            "areaName": "Chhindwara Locality",
-            "costForTwo": "₹150 for two",
-            "cuisines": [
-                "North Indian",
-                "Biryani",
-                "Tandoor"
-            ],
-            "avgRating": 4.3,
-            "parentId": "27123",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "1.3K+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 10.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "10.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-21 00:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
+const resList= [  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "506982",
+      "name": "McDonald's",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/5/22/8af8806a-476e-4f67-8766-205f084fc646_506982.JPG",
+      "locality": "Narayan Peth",
+      "areaName": "Shaniwar Peth",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Burgers",
+        "Beverages",
+        "Cafe",
+        "Desserts"
+      ],
+      "avgRating": 4.6,
+      "parentId": "630",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "2.4K+",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-24 00:45:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Burger.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Burger.png"
                 }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹129"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/adil-hotel-rautha-wada-chhindwara-locality-rest234875",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "151515",
-            "name": "Gupta Bhojnalay",
-            "cloudinaryImageId": "jo9pdipf4elcuch8g55q",
-            "locality": "fulwara chowk",
-            "areaName": "Chhindwara Locality",
-            "costForTwo": "₹200 for two",
-            "cuisines": [
-                "Fast Food",
-                "Indian",
-                "Beverages"
-            ],
-            "avgRating": 4,
-            "veg": true,
-            "parentId": "91635",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "447",
-            "sla": {
-                "deliveryTime": 37,
-                "lastMileTravel": 10.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "10.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹100 OFF",
-                "subHeader": "ABOVE ₹999",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/gupta-bhojnalay-fulwara-chowk-chhindwara-locality-rest151515",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "151518",
-            "name": "Bakery World",
-            "cloudinaryImageId": "mt2aggiscfl3yviatwng",
-            "locality": "Parasia Road",
-            "areaName": "Parasia Road",
-            "costForTwo": "₹250 for two",
-            "cuisines": [
-                "Bakery",
-                "Ice Cream",
-                "Snacks",
-                "Beverages"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "40363",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "265",
-            "sla": {
-                "deliveryTime": 44,
-                "lastMileTravel": 14.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "14.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:30:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/bakery-world-parasia-road-rest151518",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "151649",
-            "name": "Hotel Sai Nath & Sai Restaurant",
-            "cloudinaryImageId": "vkhcohhmqfczycw9vsar",
-            "locality": "railway station",
-            "areaName": "Chhindwara Locality",
-            "costForTwo": "₹200 for two",
-            "cuisines": [
-                "North Indian",
-                "South Indian",
-                "Chinese",
-                "Beverages",
-                "Fast Food",
-                "Desserts"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "101802",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "1.0K+",
-            "sla": {
-                "deliveryTime": 41,
-                "lastMileTravel": 11.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "11.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:30:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/hotel-sai-nath-and-sai-restaurant-railway-station-chhindwara-locality-rest151649",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "151656",
-            "name": "Dev International",
-            "cloudinaryImageId": "enj3srsnhbltbom2ovvh",
-            "locality": "khajri road",
-            "areaName": "Mohan Nagar",
-            "costForTwo": "₹100 for two",
-            "cuisines": [
-                "North Indian",
-                "Chinese",
-                "Fast Food",
-                "Beverages"
-            ],
-            "avgRating": 4.3,
-            "parentId": "71556",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "492",
-            "sla": {
-                "deliveryTime": 52,
-                "lastMileTravel": 11.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "50-55 mins",
-                "lastMileTravelString": "11.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:30:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹166 OFF",
-                "subHeader": "ABOVE ₹399",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/dev-international-khajri-road-mohan-nagar-rest151656",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "658210",
-            "name": "The Fusion Lounge",
-            "cloudinaryImageId": "fa4944f0cfdcbca2bec1f3ab8e3db3f7",
-            "locality": "Triloki nagar",
-            "areaName": "Railway Station",
-            "costForTwo": "₹300 for two",
-            "cuisines": [
-                "South Indian",
-                "Chinese",
-                "Beverages",
-                "Fast Food",
-                "Desserts"
-            ],
-            "avgRating": 4.2,
-            "parentId": "395453",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "343",
-            "sla": {
-                "deliveryTime": 51,
-                "lastMileTravel": 11.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "50-55 mins",
-                "lastMileTravelString": "11.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/the-fusion-lounge-triloki-nagar-railway-station-rest658210",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "625927",
-            "name": "Kathi Junction",
-            "cloudinaryImageId": "nigqvxgzvyxtfjuqasgg",
-            "locality": "Bunglow Madhuvan Colony",
-            "areaName": "Prasia Road",
-            "costForTwo": "₹200 for two",
-            "cuisines": [
-                "rolls",
-                "Burgers",
-                "Pizzas",
-                "Fast Food"
-            ],
-            "avgRating": 4.1,
-            "parentId": "1935",
-            "avgRatingString": "4.1",
-            "totalRatingsString": "366",
-            "sla": {
-                "deliveryTime": 57,
-                "lastMileTravel": 11,
-                "serviceability": "SERVICEABLE",
-                "slaString": "55-60 mins",
-                "lastMileTravelString": "11.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 23:30:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹125 OFF",
-                "subHeader": "ABOVE ₹999",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/kathi-junction-bunglow-madhuvan-colony-prasia-road-rest625927",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "150591",
-            "name": "Satkar Restaurant",
-            "cloudinaryImageId": "rvxp5xbniat84r6efku2",
-            "locality": "Sinchai Colony",
-            "areaName": "Satkar Chowk",
-            "costForTwo": "₹250 for two",
-            "cuisines": [
-                "North Indian",
-                "South Indian",
-                "Indian",
-                "Salads",
-                "Desserts"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "21553",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "2.8K+",
-            "sla": {
-                "deliveryTime": 41,
-                "lastMileTravel": 13.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "13.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:45:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
-                        "description": "Delivery!"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-North%20Indian.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹49"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/satkar-restaurant-sinchai-colony-satkar-chowk-rest150591",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "385824",
-            "name": "The Belgian Waffle Co.",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/17/a38d20d7-bbb7-4b67-8bdd-7740e85cd4af_385824.JPG",
-            "locality": "Sinchai Colony",
-            "areaName": "Mohan Nagar",
-            "costForTwo": "₹200 for two",
-            "cuisines": [
-                "Waffle",
-                "Desserts",
-                "Ice Cream",
-                "Beverages"
-            ],
-            "avgRating": 4.7,
-            "veg": true,
-            "parentId": "2233",
-            "avgRatingString": "4.7",
-            "totalRatingsString": "310",
-            "sla": {
-                "deliveryTime": 47,
-                "lastMileTravel": 13.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "13.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 22:45:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/the-belgian-waffle-co-sinchai-colony-mohan-nagar-rest385824",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "184424",
-            "name": "Sab Ghar Tak Foods",
-            "cloudinaryImageId": "ryzswg44bt7thqzkuaj4",
-            "locality": "Sanchar Colony",
-            "areaName": "Parsia Road",
-            "costForTwo": "₹200 for two",
-            "cuisines": [
-                "North Indian",
-                "South Indian",
-                "Chinese",
-                "Beverages",
-                "Fast Food",
-                "Desserts"
-            ],
-            "avgRating": 4.4,
-            "parentId": "173932",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "614",
-            "sla": {
-                "deliveryTime": 44,
-                "lastMileTravel": 11.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "11.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2025-05-20 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹50 OFF",
-                "subHeader": "ABOVE ₹199",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-6c787aee-4e66-4edf-b5f3-38e0472f9c79"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/city/chhindwara/sab-ghar-tak-foods-sanchar-colony-parsia-road-rest184424",
-            "type": "WEBLINK"
-        }
-    }
-]
+              }
+            ]
+          },
+          "textBased": {
 
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹166 OFF",
+        "subHeader": "ABOVE ₹649",
+        "discountTag": "FLAT DEAL",
+        "headerTypeV2": 12
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/mcdonalds-narayan-peth-shaniwar-peth-rest506982",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "243625",
+      "name": "KFC",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/4c1906b4-f727-434b-8496-a2e669269dde_243625.JPG",
+      "locality": "Deccan Gymkhana",
+      "areaName": "Deccan Gymkhana",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Burgers",
+        "Rolls & Wraps",
+        "Fast Food"
+      ],
+      "avgRating": 4.3,
+      "parentId": "547",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "3.7K+",
+      "sla": {
+        "deliveryTime": 25,
+        "lastMileTravel": 2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "2.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-23 23:00:00",
+        "opened": true
+      },
+      "badges": {
+
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹64"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.0",
+          "ratingCount": "4.4K+"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/kfc-deccan-gymkhana-rest243625",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "456986",
+      "name": "Domino's Pizza",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/13/12fa947c-5a8a-468d-aa30-cf5c51849f2d_456986.JPG",
+      "locality": "Somwar Peth",
+      "areaName": "Rasta Peth",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Pizzas",
+        "Italian",
+        "Pastas",
+        "Desserts"
+      ],
+      "avgRating": 4.1,
+      "parentId": "2456",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "1.2K+",
+      "sla": {
+        "deliveryTime": 25,
+        "lastMileTravel": 1.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-25 mins",
+        "lastMileTravelString": "1.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-23 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Pizza.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹75"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/dominos-pizza-somwar-peth-rasta-peth-rest456986",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "394784",
+      "name": "Theobroma",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/345f9f91-f934-45ae-a9fc-dba6f875ca75_394784.jpg",
+      "locality": "Shivaji Nagar",
+      "areaName": "Shivaji Nagar",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Bakery",
+        "Desserts"
+      ],
+      "avgRating": 4.6,
+      "parentId": "1040",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "2.7K+",
+      "sla": {
+        "deliveryTime": 27,
+        "lastMileTravel": 2.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "2.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-23 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Desserts.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "15% OFF",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "3.9",
+          "ratingCount": "524"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/theobroma-shivaji-nagar-rest394784",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "625226",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/5/22/c50900f7-a66b-4980-be8a-df358fe67e2c_625226.JPG",
+      "locality": "Shukrawar Peth",
+      "areaName": "Hirabaug",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Pizzas"
+      ],
+      "avgRating": 4.1,
+      "parentId": "721",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "1.9K+",
+      "sla": {
+        "deliveryTime": 48,
+        "lastMileTravel": 2.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45-50 mins",
+        "lastMileTravelString": "2.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-24 05:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Pizza.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹129"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "4.8",
+          "ratingCount": "849"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/pizza-hut-shukrawar-peth-hirabaug-rest625226",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "14548",
+      "name": "Burger King",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/1411f1d3-1947-4d7c-a8cc-d8ab52d0fe79_14548.jpg",
+      "locality": "Paud Road",
+      "areaName": "Kothrud",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Burgers",
+        "American"
+      ],
+      "avgRating": 4.2,
+      "parentId": "166",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "72K+",
+      "sla": {
+        "deliveryTime": 36,
+        "lastMileTravel": 5.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "5.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-24 06:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Rxawards/_CATEGORY-Burger.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Delivery!",
+                  "imageId": "Rxawards/_CATEGORY-Burger.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹139"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/burger-king-paud-road-kothrud-rest14548",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "659799",
+      "name": "Wendy's Burgers",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/11/4f75b8ae-b69c-45a9-a0a6-494cdd9ffae4_659799.JPG",
+      "locality": "Ask Building",
+      "areaName": "Law College Road",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Burgers",
+        "American",
+        "Fast Food",
+        "Snacks"
+      ],
+      "avgRating": 4.4,
+      "parentId": "972",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "4.7K+",
+      "sla": {
+        "deliveryTime": 34,
+        "lastMileTravel": 3.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "3.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-23 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "guiltfree/GF_Logo_android_3x",
+            "shortDescription": "options available",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "options available"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "66% OFF",
+        "subHeader": "UPTO ₹126",
+        "headerTypeV2": 12
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/wendys-burgers-ask-building-law-college-road-rest659799",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+      "id": "323532",
+      "name": "Chinese Wok",
+      "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+      "locality": "Bibwewadi",
+      "areaName": "Koregaon Park",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Chinese",
+        "Asian",
+        "Tibetan",
+        "Desserts"
+      ],
+      "avgRating": 4.2,
+      "parentId": "61955",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "3.4K+",
+      "sla": {
+        "deliveryTime": 65,
+        "lastMileTravel": 3.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "60-65 mins",
+        "lastMileTravelString": "3.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2025-05-23 23:00:00",
+        "opened": true
+      },
+      "badges": {
+
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+
+          },
+          "textBased": {
+
+          },
+          "textExtendedBadges": {
+
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹129"
+      },
+      "orderabilityCommunication": {
+        "title": {
+
+        },
+        "subTitle": {
+
+        },
+        "message": {
+
+        },
+        "customIcon": {
+
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+
+          },
+          "video": {
+
+          }
+        }
+      },
+      "reviewsSummary": {
+
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "2.7",
+          "ratingCount": "51"
+        },
+        "source": "GOOGLE",
+        "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      "context": "seo-data-8c3f3429-8934-41ce-a822-31af7009f764"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/city/pune/chinese-wok-bibwewadi-koregaon-park-rest323532",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  }
+]
 
 export default resList;
