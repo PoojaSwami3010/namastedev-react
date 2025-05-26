@@ -31,10 +31,11 @@ const featchData=async ()=>{
   // const data =await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
   // const json1=await data.json();
 
-  // console.log("json",json1)
+  const json=resList
+  // console.log("json",json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
   // optional chanining
-  setListOfRestaurant(resList);
-  setFilteredList(resList);
+  setListOfRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+  setFilteredList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
 }
 
 // conditional rendering (rendering on bases of condition)
