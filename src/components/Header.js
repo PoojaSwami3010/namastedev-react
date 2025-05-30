@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LOGO_URL } from '../utils/constants';
-
+import { Link } from 'react-router-dom';
 
 
 const Header=()=>{
@@ -25,10 +25,12 @@ console.log("header render")
             <li>Home
             </li>
             <li>
-              About Us
+              {/* <a href='/about'>About Us</a>   this will rerender whole page so use link */}
+              <Link to="/about">About Us</Link>
               </li>
               <li>
-              Contact US
+              <Link to="/contact"> Contact US</Link>
+             
               </li>
               <li>
               Cart
