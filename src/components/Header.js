@@ -22,7 +22,8 @@ console.log("header render")
         </div>
         <div className='nav-items'>
           <ul>
-            <li>Home
+            <li>
+            <Link to="/">Home</Link>
             </li>
             <li>
               {/* <a href='/about'>About Us</a>   this will rerender whole page so use link */}
