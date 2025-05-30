@@ -23,6 +23,11 @@ useState()
 useEffect()
 
 
+#Two types routing in web apps
+
+client side rotuing
+server side routing
+
 #React fiber https://github.com/acdlite/react-fiber-architecture
 
 useEffect(callbackFunction,dependencyArray)
