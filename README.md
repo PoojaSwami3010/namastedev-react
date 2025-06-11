@@ -2,6 +2,8 @@
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react)
 
+https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=README.md
+
 
 #two type of import export
 
