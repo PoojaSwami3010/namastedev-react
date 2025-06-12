@@ -11,7 +11,7 @@ featchMenu();
 },[])
 
 
-// console.log("res menu data",resData)
+console.log("res menu data",resData)
 const featchMenu=async ()=>{
 
     // const data=await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=11887&catalog_qa=undefined&submitAction=ENTER")
@@ -23,12 +23,22 @@ setResInfo(resData?.data?.cards[2].card.card.info)
 }
 const {name,cuisines,costForTwoMessage,id}=resData?.data?.cards[2].card.card.info
 
+console.log("vjdjs",resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
+const itemsCard=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
+
+console.log('items card',itemsCard)
 
     return resInfo===null ? <Shimmer />: (
         <div className="menu">
             <h1>{name}</h1>
-            <h2>{cuisines}</h2>
+            <h2>{cuisines.join(",")}</h2>
             <h2>{costForTwoMessage}</h2>
+            <h2>Menu</h2>
+            <ul>
+                {itemsCard.map(res=>
+                    <li key={res.card.info.id}>{res.card.info.name}</li>
+                )}
+            </ul>
            
         </div>
     )
