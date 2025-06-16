@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import RestaurantCard  from './RestaurantCard'
 import resList from '../utils/mockData'
 import Shimmer from './Shimmer'
-
+import {Link} from 'react-router-dom'
 
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
@@ -71,7 +71,7 @@ const featchData=async ()=>{
         <div className='res-container'>
           {/* Rstaurnatcard */}
             {              filteredList.map((item)=>
-                  <RestaurantCard key={item?.info?.id} resData={item} />              )
+               <Link key={item?.info?.id}  to={"/restaurant/" + 89}><RestaurantCard key={item?.info?.id} resData={item} />   </Link>              )
             }    
                      </div>
       </div>
