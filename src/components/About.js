@@ -8,8 +8,8 @@ const About=()=>{
         <div>
             <h1>About</h1>
             <h2>this is React course Series</h2>
-            <User name={'Pooja'}/>
-            <UserClass name={'Pooja From clase component'}/>
+            {/* <User name={'Pooja'}/> */}
+            <UserClass name={'Pooja From class component'} location={'Pune'}/>
         </div>
     )
 }
