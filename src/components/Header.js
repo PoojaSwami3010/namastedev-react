@@ -11,7 +11,7 @@ const [btnNameReact,setBtnNameReact]=useState('Login');
 
 // if no dependency array useeffect is called on every component render
 useEffect(()=>{
-console.log("header render")
+// console.log("header render")
 },[ ])
 
 

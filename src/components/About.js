@@ -25,7 +25,8 @@ class About extends React.Component{
             <h1>About Class Component</h1>
             <h2>this is React course Series</h2>
             {/* <User name={'Pooja'}/> */}
-            <UserClass name={'Pooja From class component'} location={'Pune'}/>
+            <UserClass name={'Pooja1 From class component'} location={'Pune'}/>
+            <UserClass name={'Pooja 2 From class 2 component'} location={'Pune 2'}/>
         </div>
     );
 }
@@ -42,5 +43,24 @@ class About extends React.Component{
 //         </div>
 //     )
 // }
+
+
+/* flow of renders
+-Parent constructor
+-Parent Render
+    -Pooja 1 Constructor
+    -Pooja 1 render
+
+    -Pooja 2 Constructor
+    -Pooja 2 render
+
+    
+    -Pooja 1 componentDidMount
+    -Pooja 2 componentDidMount
+-Parent ComponentDidMount
+
+
+
+*/
 
 export default About;
