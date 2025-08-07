@@ -5,36 +5,37 @@ class UserClass extends React.Component{
     constructor(props){
         super(props);
         // this is how we create state varibale inside classbase component
-        this.state={
-            count:0,
-            count2:2
+      this.state={
+        userInfo:{
+            name:'Dummy',
+            location:"Deafult",
+            avatar_url:'dummy-photo'
         }
- console.log(this.props.name + "Child Constructor")
+      }
+//  console.log(this.props.name + "Child Constructor")
     }
 
-componentDidMount(){
-    console.log(this.props.name +"Child Component did mount")
+async componentDidMount(){
+    // console.log(this.props.name +"Child Component did mount")
 
     // Api call make here 
+
+    const data=await fetch("https://api.github.com/users/pooja");
+    const json=await data.json();
+    this.setState({userInfo:json})
+    console.log("data",json)
 }
 
     render(){
 
-        const {name,location}=this.props;
-        const {count}=this.state;
+        // const {name,location}=this.props;
+        const {name,location,avatar_url}=this.state.userInfo
+        
 
-        console.log(this.props.name +"Child Render")
+        // console.log(this.props.name +"Child Render")
 
-        return <div className="user-card">
-            <h1>Count: {count}</h1>
-            <button onClick={()=>{
-                // never updates state variables directly (this.state.count+=1)
-                // use below method
-                this.setState({
-                      count:this.state.count+1,   
-                })
-            }}>Count Increases</button>
-           
+        return <div className="user-card">        
+           <img src={avatar_url} width={70} height={70}></img>
         <h2>Name: {name}</h2>
         <h3>Location: {location}</h3>
         <h4>Contact: @Pooja</h4>

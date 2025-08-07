@@ -40,3 +40,6 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
 
 #React Lifcycle 
     https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+#github api
+    api.github.com
