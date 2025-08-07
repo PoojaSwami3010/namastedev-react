@@ -4,12 +4,12 @@ class UserClass extends React.Component{
 
     constructor(props){
         super(props);
-        // tis is how we create state varibale inside classbase component
+        // this is how we create state varibale inside classbase component
         this.state={
             count:0,
             count2:2
         }
-
+ console.log("Child Constructor")
     }
 
     render(){
@@ -17,6 +17,7 @@ class UserClass extends React.Component{
         const {name,location}=this.props;
         const {count}=this.state;
 
+        console.log("Child Render")
 
         return <div className="user-card">
             <h1>Count: {count}</h1>
