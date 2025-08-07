@@ -5,7 +5,7 @@ import UserClass from './UserClass';
 
 
 
-class About extends Component{
+class About extends React.Component{
 
     constructor(props){
         super(props);
@@ -13,6 +13,9 @@ class About extends Component{
     }
 
 
+    componentDidMount(){
+        console.log("Parent componet did mount")
+    }
 
     render(){
         console.log("Parent render")
