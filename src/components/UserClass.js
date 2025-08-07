@@ -17,10 +17,10 @@ class UserClass extends React.Component{
 
 async componentDidMount(){
     // even if we change link thenk also setinterval will call
-    this.timer =setInterval(()=>{
-console.log("namste react op")
-    },1000)
-    console.log(this.props.name +"Child Component did mount")
+//     this.timer =setInterval(()=>{
+// console.log("namste react op")
+//     },1000)
+    // console.log(this.props.name +"Child Component did mount")
 
     // Api call make here 
 
@@ -35,12 +35,12 @@ componentDidUpdate(prevProps,prevState){
     if(this.state.count!=prevState.count){
         console.log("do something")
     }
-    console.log("Component did Mount")
+    // console.log("Component did Mount")
 }
 
 componentWillUnmount(){
-    console.log("Component will unmount")
-    clearInterval(this.timer)
+    // console.log("Component will unmount")
+    // clearInterval(this.timer)
 }
 
     render(){
@@ -56,6 +56,7 @@ componentWillUnmount(){
         <h2>Name: {name}</h2>
         <h3>Location: {location}</h3>
         <h4>Contact: @Pooja</h4>
+        
     </div>
     }
 }

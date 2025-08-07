@@ -7,6 +7,17 @@ const [count2]=useState(1);
 
 useEffect(()=>{
 //Api calls
+const timer=setInterval(()=>{
+    console.log("namste react op")
+        },1000)
+
+
+        return()=>{
+            // this return is called when we are unmount the component or destroying component
+            console.log("use effect")
+            clearInterval(timer)
+
+        }
 },[count])
 
 useEffect(()=>{
