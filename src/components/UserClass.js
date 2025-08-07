@@ -26,7 +26,10 @@ async componentDidMount(){
     console.log("data",json)
 }
 
-componentDidUpdate(){
+componentDidUpdate(prevProps,prevState){
+    if(this.state.count!=prevState.count){
+        console.log("do something")
+    }
     console.log("Component did Mount")
 }
 
