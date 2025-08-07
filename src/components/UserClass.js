@@ -16,14 +16,19 @@ class UserClass extends React.Component{
     }
 
 async componentDidMount(){
-    // console.log(this.props.name +"Child Component did mount")
+    // even if we change link thenk also setinterval will call
+//     setInterval(()=>{
+// console.log("namste react op")
+//     },1000)
+    console.log(this.props.name +"Child Component did mount")
 
     // Api call make here 
 
-    const data=await fetch("https://api.github.com/users/pooja");
-    const json=await data.json();
-    this.setState({userInfo:json})
-    console.log("data",json)
+
+    // const data=await fetch("https://api.github.com/users/pooja");
+    // const json=await data.json();
+    // this.setState({userInfo:json})
+    // console.log("data",json)
 }
 
 componentDidUpdate(prevProps,prevState){

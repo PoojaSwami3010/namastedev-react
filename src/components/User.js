@@ -7,7 +7,11 @@ const [count2]=useState(1);
 
 useEffect(()=>{
 //Api calls
-},[count,count2])
+},[count])
+
+useEffect(()=>{
+    //Api calls
+    },[count2])
 
     return <div className="user-card">
         <h1>Count= {count}</h1>
