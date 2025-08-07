@@ -26,6 +26,14 @@ async componentDidMount(){
     console.log("data",json)
 }
 
+componentDidUpdate(){
+    console.log("Component did Mount")
+}
+
+componentWillUnmount(){
+    console.log("Component will unmount")
+}
+
     render(){
 
         // const {name,location}=this.props;
