@@ -36,3 +36,7 @@ useEffect(callbackFunction,dependencyArray)
 
 
 https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/components/About.js&view=editor
+
+
+#React Lifcycle 
+    https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
