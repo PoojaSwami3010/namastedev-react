@@ -44,3 +44,26 @@ async componentDidMount(){
 }
 
 export default UserClass;
+
+
+
+
+/**
+ * --------Mounting Lifecycles---------------
+ * constructor(dummy data)
+ * Render(dummy data)
+ * 
+ * <html dymmyData>
+ * 
+ * ComponentDidMount
+ * 
+ *      api call
+ *      this.setstate ---state variable is updated
+ * 
+ * --------UPDATE Cycle ---------------------------------------
+ *          render (api data)
+ * 
+ *          < html new api data will load>
+ * 
+ * ComponentDidUpdate
+ */
