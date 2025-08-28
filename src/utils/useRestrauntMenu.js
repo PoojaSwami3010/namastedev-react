@@ -15,7 +15,7 @@ const useRestrauntMenu =(resId)=>{
 
         const data =await resData?.data?.cards[2].card.card.info
         // const json =await data.json();
-        setResInfo(data);
+        setResInfo(data.data);
     }
     return resInfo;
 }
