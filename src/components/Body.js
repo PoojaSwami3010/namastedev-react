@@ -3,6 +3,7 @@ import RestaurantCard  from './RestaurantCard'
 import resList from '../utils/mockData'
 import Shimmer from './Shimmer'
 import {Link} from 'react-router-dom'
+import useOnlineStatus from "../utils/useOnlineStatus"
 
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
@@ -42,7 +43,11 @@ const featchData=async ()=>{
 // if(listOfRestaurant.length===0){
 //   return <Shimmer/>
 // }
+const onlineStatus=useOnlineStatus();
 
+if(onlineStatus===false){
+  return <h1>Looks Like you're offline!!!! Please check your internet connection.</h1>
+}
 
 
     return listOfRestaurant.length===0 ? (<Shimmer/>):(

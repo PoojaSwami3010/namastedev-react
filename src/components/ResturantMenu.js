@@ -8,7 +8,7 @@ const ResturantMenu=()=>{
     const [resInfo,setResInfo]=useState(null)
     const {resId}=useParams();
 
-    const resInfoCustomHook=useRestrauntMenu(resId);
+    // const resInfoCustomHook=useRestrauntMenu(resId);
     console.log("params",resId)
 
 useEffect(()=>{
@@ -26,7 +26,7 @@ const featchMenu=async ()=>{
     // console.log(json1)
 setResInfo(resData?.data?.cards[2].card.card.info)
 }
-const {name,cuisines,costForTwoMessage,id}=resInfo
+const {name,cuisines,costForTwoMessage,id}=resData?.data?.cards[2].card.card.info
 
 // console.log("vjdjs",resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
 const itemsCard=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
