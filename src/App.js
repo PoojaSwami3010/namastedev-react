@@ -1,10 +1,16 @@
 import React from 'react';
-import './style.css';
-import Header from './components/Header';
-import Body from './components/Body';
-import About from './components/About';
-import Contact from './components/Contact';
 import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import './style.css';
+
+// Cunking
+// Code splitting
+// Dynamic Bundling
+// Lazy Loading
+// On Demand loading
+//dynamic inport
+
+
 
 export default function App() {
   return (

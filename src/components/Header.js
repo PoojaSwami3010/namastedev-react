@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
+import useOnlineStatus from '../utils/useOnlineStatus';
 
 
 const Header=()=>{
@@ -14,6 +15,7 @@ useEffect(()=>{
 // console.log("header render")
 },[ ])
 
+const onlineStatus=useOnlineStatus();
 
     return (
       <div className='header'>
@@ -22,6 +24,7 @@ useEffect(()=>{
         </div>
         <div className='nav-items'>
           <ul>
+            <li>OnLine Status:{onlineStatus? "Online" : "Offline"}</li>
             <li>
             <Link to="/">Home</Link>
             </li>
@@ -31,6 +34,10 @@ useEffect(()=>{
               </li>
               <li>
               <Link to="/contact"> Contact US</Link>
+             
+              </li>
+              <li>
+              <Link to="/grocery"> Grocery</Link>
              
               </li>
               <li>
