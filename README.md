@@ -43,3 +43,14 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
 
 #github api
     api.github.com
+
+
+
+
+# UI Design Frameworks an d libraries
+    Material Ui
+    Bootstrap Ui
+    Chakra UI
+    Style components
+    Ant Design
+    Tailwind css
