@@ -52,7 +52,7 @@ if(onlineStatus===false){
 
     return listOfRestaurant.length===0 ? (<Shimmer/>):(
       <div className='body'>
-        <div className='filter'>
+        <div className='filter flex items-center'>
           <div className="search m-4 p-4 ">
             <input typy="text" className="border border-solid border-black" 
             value={searchText} 
@@ -64,14 +64,17 @@ if(onlineStatus===false){
               const filteredList1=listOfRestaurant.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                 // console.log(filteredList1)
                 setFilteredList(filteredList1)
-            }} className="px-4 bg-green-100 m-4 py-2">Search</button>
+            }} className="px-4 bg-green-100 m-4 py-2 rounded-lg">Search</button>
           </div>
-          <button className="filter-btn" onClick={()=>{
+          <div>
+          <button className="px-4 m-4 bg-gray-100 py-2 rounded-lg" onClick={()=>{
           
-            const filteredList=listOfRestaurant.filter((res)=>res.info.avgRating>4)
-            // console.log("button listOfRestaurant",filteredList)
-            setListOfRestaurant(filteredList);
-            }} >Top Rated Restaurants</button>
+          const filteredList=listOfRestaurant.filter((res)=>res.info.avgRating>4)
+          // console.log("button listOfRestaurant",filteredList)
+          setListOfRestaurant(filteredList);
+          }} >Top Rated Restaurants</button>
+          </div>
+   
         </div>
         <div className='res-container'>
           {/* Rstaurnatcard */}
