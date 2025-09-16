@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import RestaurantCard  from './RestaurantCard'
+import RestaurantCard , {withPromotedLabel} from './RestaurantCard'
 import resList from '../utils/mockData'
 import Shimmer from './Shimmer'
 import {Link} from 'react-router-dom'
@@ -14,9 +14,9 @@ const [filteredList,setFilteredList]=useState([])
 const [searchText,setSearchText]=useState('')
 // console.log("body rendered")
 
-useEffect(()=>{
+const RestaurantCardPromoted=withPromotedLabel(RestaurantCard);
 
-    
+useEffect(()=>{    
     // var count = {};
     // 'aabbbgghye'.split('').forEach(function(s) {
     //    count[s] ? count[s]++ : count[s] = 1;
@@ -33,10 +33,11 @@ const featchData=async ()=>{
   // const json1=await data.json();
 
   const json=resList
-  // console.log("json",json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+  console.log("json",json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants)
   // optional chanining
-  setListOfRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-  setFilteredList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+  setListOfRestaurant(json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants);
+  setFilteredList(json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants);
+
 }
 
 // conditional rendering (rendering on bases of condition)
@@ -79,7 +80,14 @@ if(onlineStatus===false){
         <div className='flex flex-wrap'>
           {/* Rstaurnatcard */}
             {              filteredList.map((item)=>
-               <Link key={item?.info?.id}  to={"/restaurant/" + 89}><RestaurantCard key={item?.info?.id} resData={item} />   </Link>              )
+               <Link key={item?.info?.id}  to={"/restaurant/" + 386176}>
+                {/* if restaurant is promoted then we will show promoted label on card */}
+                {
+                  item?.info?.promoted ? (  <RestaurantCardPromoted key={item?.info?.id} resData={item} /> ) : <RestaurantCard key={item?.info?.id} resData={item} />   
+                }
+               
+                
+                </Link>              )
             }    
                      </div>
       </div>

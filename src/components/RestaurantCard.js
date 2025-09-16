@@ -25,4 +25,22 @@ import { CDN_URL } from "../utils/constants";
       }
       
 
+// higher Order Component 
+// imput restocard-output restaurantcard Promoted
+
+
+export const withPromotedLabel=(RestaurantCard)=>{
+  return (props)=>{
+
+    return(
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Promoted</label>
+        <RestaurantCard  {...props}/>
+      </div>
+    )
+
+  }
+}
+
+
       export default RestaurantCard;

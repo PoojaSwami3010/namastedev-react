@@ -28,7 +28,7 @@ setResInfo(resData?.data?.cards[2].card.card.info)
 }
 const {name,cuisines,costForTwoMessage,id}=resData?.data?.cards[2].card.card.info
 
-// console.log("vjdjs",resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
+console.log("vjdjs",resData?.data?.cards[1])
 const itemsCard=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
 
 // console.log('items card',itemsCard)
