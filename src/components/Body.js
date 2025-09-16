@@ -76,7 +76,7 @@ if(onlineStatus===false){
           </div>
    
         </div>
-        <div className='res-container'>
+        <div className='flex flex-wrap'>
           {/* Rstaurnatcard */}
             {              filteredList.map((item)=>
                <Link key={item?.info?.id}  to={"/restaurant/" + 89}><RestaurantCard key={item?.info?.id} resData={item} />   </Link>              )

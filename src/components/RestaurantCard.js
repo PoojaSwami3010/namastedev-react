@@ -10,9 +10,10 @@ import { CDN_URL } from "../utils/constants";
       const {name,cloudinaryImageId,cuisines,avgRating,costForTwo,sla}=resData?.info
       
         return (
-          <div className='res-card' style={{backgroundColor:"#F0F0F0"}}>
-             <img className='res-logo' height={95} alt="res-logo" src={CDN_URL + cloudinaryImageId}></img>
-            <h3>{name}</h3>
+          // here we added w-[200px] we can add speicifally custom css  
+          <div className='m-4 p-4 w-[250px] rounded-lg' style={{backgroundColor:"#F0F0F0"}}>
+             <img className='res-logo rounded-lg' height={95} alt="res-logo" src={CDN_URL + cloudinaryImageId}></img>
+            <h3 className="font-bold py-4 text-lg">{name}</h3>
           <h4>
           {cuisines.join(", ")}
           </h4>
