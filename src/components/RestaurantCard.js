@@ -11,7 +11,7 @@ import { CDN_URL } from "../utils/constants";
       
         return (
           // here we added w-[200px] we can add speicifally custom css  
-          <div className='m-4 p-4 w-[250px] rounded-lg' style={{backgroundColor:"#F0F0F0"}}>
+          <div className='m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-400 hover:shadow-lg' >
              <img className='res-logo rounded-lg' height={95} alt="res-logo" src={CDN_URL + cloudinaryImageId}></img>
             <h3 className="font-bold py-4 text-lg">{name}</h3>
           <h4>
