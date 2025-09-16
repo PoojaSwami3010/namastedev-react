@@ -18,29 +18,29 @@ useEffect(()=>{
 const onlineStatus=useOnlineStatus();
 
     return (
-      <div className='header'>
+      <div className='flex  justify-between bg-pink-100 shadow-lg '>
         <div className='logo-container'>
-        <img className='logo' src={LOGO_URL}></img>
+        <img className='w-24 p-4' src={LOGO_URL}></img>
         </div>
         <div className='nav-items'>
-          <ul>
-            <li>OnLine Status:{onlineStatus? "Online" : "Offline"}</li>
-            <li>
+          <ul className='flex p-4 items-center'>
+            <li className='px-1'>OnLine Status:{onlineStatus? "Online" : "Offline"}</li>
+            <li className='px-1'>
             <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className='px-1'>
               {/* <a href='/about'>About Us</a>   this will rerender whole page so use link */}
               <Link to="/about">About Us</Link>
               </li>
-              <li>
+              <li className='px-1'>
               <Link to="/contact"> Contact US</Link>
              
               </li>
-              <li>
+              <li className='px-1'>
               <Link to="/grocery"> Grocery</Link>
              
               </li>
-              <li>
+              <li className='px-1'>
               Cart
               </li>
               <button className='login' onClick={()=>{
