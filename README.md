@@ -47,7 +47,7 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
 
 
 
-# UI Design Frameworks an d libraries
+# UI Design Frameworks and libraries
     Material Ui
     Bootstrap Ui
     Chakra UI
