@@ -3,6 +3,7 @@ import Shimmer from "./Shimmer";
 import resData from "../utils/mockDataforSingleCard";
 import { useParams } from "react-router-dom";
 import useRestrauntMenu from '../utils/useRestrauntMenu'
+import RessturantCategory from "../components/RessturantCategory.js"
 
 const ResturantMenu=()=>{
     const [resInfo,setResInfo]=useState(null)
@@ -16,7 +17,7 @@ featchMenu();
 },[])
 
 
-// console.log("res menu data",resData)
+console.log("res menu data",resData)
 const featchMenu=async ()=>{
 
     // const data=await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=11887&catalog_qa=undefined&submitAction=ENTER")
@@ -28,22 +29,28 @@ setResInfo(resData?.data?.cards[2].card.card.info)
 }
 const {name,cuisines,costForTwoMessage,id}=resData?.data?.cards[2].card.card.info
 
-console.log("vjdjs",resData?.data?.cards[1])
+// console.log("vjdjs",resData?.data?.cards[1])
 const itemsCard=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
-
-// console.log('items card',itemsCard)
+// filter out all cateogry where we have which has @type=='itemcategory'
+// const categories=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.filter(c=>c['@type']=='type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
+// console.log("categories",categories)
+console.log('items card',itemsCard)
 
     return resInfo===null ? <Shimmer />: (
-        <div className="menu">
-            <h1>{name}</h1>
-            <h2>{cuisines.join(",")}</h2>
+        <div className="text-center">
+            <h1 className="font-bold my-6 text-xl">{name}</h1>
+            <h2 className="font-bold text-lg">{cuisines.join(",")}</h2>
             <h2>{costForTwoMessage}</h2>
-            <h2>Menu</h2>
+             {/*<h2>Menu</h2>
             <ul>
                 {itemsCard.map(res=>
                     <li key={res.card.info.id}>{res.card.info.name} -{"Rs."} {res.card.info.price/100}</li>
                 )}
-            </ul>
+            </ul> */}
+            {/* now want to build accordian  */}
+            {itemsCard.map((cateogry)=>{
+               return <RessturantCategory data={cateogry.card.info}/>
+            })}
            
         </div>
     )
