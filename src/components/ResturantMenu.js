@@ -49,7 +49,7 @@ console.log('items card',itemsCard)
             </ul> */}
             {/* now want to build accordian  */}
             {itemsCard.map((cateogry)=>{
-               return <RessturantCategory data={cateogry.card.info}/>
+               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id}/>
             })}
            
         </div>
