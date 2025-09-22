@@ -48,8 +48,9 @@ console.log('items card',itemsCard)
                 )}
             </ul> */}
             {/* now want to build accordian  */}
-            {itemsCard.map((cateogry)=>{
-               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id}/>
+            {/* controlled component now restaturant category */}
+            {itemsCard.map((cateogry,index)=>{
+               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id} showItem={index==0 && true}/>
             })}
            
         </div>
