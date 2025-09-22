@@ -8,6 +8,7 @@ import RessturantCategory from "../components/RessturantCategory.js"
 const ResturantMenu=()=>{
     const [resInfo,setResInfo]=useState(null)
     const {resId}=useParams();
+    const [showIndex,setShowIndex]=useState(0)
 
     // const resInfoCustomHook=useRestrauntMenu(resId);
     console.log("params",resId)
@@ -50,7 +51,7 @@ console.log('items card',itemsCard)
             {/* now want to build accordian  */}
             {/* controlled component now restaturant category */}
             {itemsCard.map((cateogry,index)=>{
-               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id} showItem={index==0 && true}/>
+               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id} showItem={index==showIndex ? true: false}/>
             })}
            
         </div>
