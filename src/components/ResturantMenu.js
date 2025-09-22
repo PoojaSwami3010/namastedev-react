@@ -51,7 +51,8 @@ console.log('items card',itemsCard)
             {/* now want to build accordian  */}
             {/* controlled component now restaturant category */}
             {itemsCard.map((cateogry,index)=>{
-               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id} showItem={index==showIndex ? true: false}/>
+               return <RessturantCategory data={cateogry.card.info} key={cateogry.card.info.id} showItem={index==showIndex ? true: false}
+               setShowIndex={()=>setShowIndex(index)}/>
             })}
            
         </div>
