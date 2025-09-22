@@ -6,7 +6,7 @@ const RessturantCategory=(data)=>{
     const [showItem,setShowItems]=useState(false)
 
     const handleClick=()=>{
-        console.log("clicked")
+        // console.log("clicked")
         setShowItems(!showItem)
     }
 
