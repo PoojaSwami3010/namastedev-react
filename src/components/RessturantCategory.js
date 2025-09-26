@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ItemList from "./ItemList";
 
-const RessturantCategory=(data,showItem,setShowIndex)=>{
+const RessturantCategory=(data,showItem,setShowIndex,)=>{
     // console.log("data in categry",data)
     // const [showItem,setShowItems]=useState(false)
 

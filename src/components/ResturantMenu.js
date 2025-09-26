@@ -10,6 +10,8 @@ const ResturantMenu=()=>{
     const {resId}=useParams();
     const [showIndex,setShowIndex]=useState(0)
 
+    const dummyData="Dummy Data";
+
     // const resInfoCustomHook=useRestrauntMenu(resId);
     console.log("params",resId)
 

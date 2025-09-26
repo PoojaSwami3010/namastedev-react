@@ -1,5 +1,5 @@
 const ItemList=(item)=>{
-    // console.log("item",item)
+    // console.log("dummy",dummy)
     return  <div className="p-2 m-2 border-gray-200  border-b-2 text-left flex">
         {/* <ul>
             {item.map(item=>{

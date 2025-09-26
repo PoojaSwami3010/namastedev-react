@@ -1,10 +1,10 @@
-import React from "react";
+import React ,{useContext}from "react";
 import { CDN_URL } from "../utils/constants";
-
+import UserContext from '../utils/UserContext'
 
 // const RestaurantCard=(props)=>{
     const RestaurantCard=(props)=>{
-        // console.log(props)
+      const {loggedInUser}=useContext(UserContext)        // console.log(props)
         const {resData}=props;
       //   console.log('resData',resData)
       const {name,cloudinaryImageId,cuisines,avgRating,costForTwo,sla}=resData?.info
@@ -20,6 +20,7 @@ import { CDN_URL } from "../utils/constants";
           <h4 >{avgRating}</h4>
           <h4>{costForTwo}</h4>
           <h4>{sla.slaString} </h4>
+          <h4>{loggedInUser}</h4>
           </div>
         )
       }
