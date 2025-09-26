@@ -13,14 +13,14 @@ const ResturantMenu=()=>{
     const dummyData="Dummy Data";
 
     // const resInfoCustomHook=useRestrauntMenu(resId);
-    console.log("params",resId)
+    // console.log("params",resId)
 
 useEffect(()=>{
 featchMenu();
 },[])
 
 
-console.log("res menu data",resData)
+// console.log("res menu data",resData)
 const featchMenu=async ()=>{
 
     // const data=await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=11887&catalog_qa=undefined&submitAction=ENTER")
@@ -37,7 +37,7 @@ const itemsCard=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2
 // filter out all cateogry where we have which has @type=='itemcategory'
 // const categories=resData?.data?.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.filter(c=>c['@type']=='type.googleapis.com/swiggy.presentation.food.v2.Restaurant')
 // console.log("categories",categories)
-console.log('items card',itemsCard)
+// console.log('items card',itemsCard)
 
     return resInfo===null ? <Shimmer />: (
         <div className="text-center">

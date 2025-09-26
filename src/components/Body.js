@@ -37,7 +37,7 @@ const featchData=async ()=>{
   // const json1=await data.json();
 
   const json=resList
-  console.log("json",json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants)
+  // console.log("json",json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants)
   // optional chanining
   setListOfRestaurant(json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants);
   setFilteredList(json.data.cards[0].card.card.gridElements.infoWithStyle.restaurants);
