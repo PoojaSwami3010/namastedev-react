@@ -16,23 +16,25 @@ import UserContext from './utils/UserContext';
 
 export default function App() {
 
-  const [userInfo,setUserInfo]=useState()
+  const [userName,setUserName]=useState()
 
 
   useEffect(()=>{
     const data ={
       name:"Pooja Swami"
     }
-    setUserInfo(data.name)
+    setUserName(data.name)
   })
 
 
   return (
-    <UserContext.Provider>
+    <UserContext.Provider value={{loggedInUser:userName}}>
 
    
     <div className="app">
+    <UserContext.Provider value={{loggedInUser:'Elon Musk'}}>
       <Header />
+      </UserContext.Provider>
       {/* this outlet filled with whatever component we have in chirdern with routes */}
       <Outlet/>
      
