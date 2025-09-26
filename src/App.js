@@ -28,11 +28,11 @@ export default function App() {
 
 
   return (
-    <UserContext.Provider value={{loggedInUser:userName}}>
+    <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
 
    
     <div className="app">
-    <UserContext.Provider value={{loggedInUser:'Elon Musk'}}>
+    <UserContext.Provider value={{loggedInUser:'Pooja Swami'}}>
       <Header />
       </UserContext.Provider>
       {/* this outlet filled with whatever component we have in chirdern with routes */}

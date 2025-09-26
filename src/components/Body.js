@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState,useContext } from "react"
 import RestaurantCard , {withPromotedLabel} from './RestaurantCard'
 import resList from '../utils/mockData'
 import Shimmer from './Shimmer'
 import {Link} from 'react-router-dom'
 import useOnlineStatus from "../utils/useOnlineStatus"
+import UserContext from "../utils/UserContext"
 
 // not using key (not acceptable) <<< index as key <<<<<<<<< unique id (best priactice)
 const Body=()=>{
@@ -13,6 +14,9 @@ const [listOfRestaurant,setListOfRestaurant]=useState([]);
 const [filteredList,setFilteredList]=useState([])
 const [searchText,setSearchText]=useState('')
 // console.log("body rendered")
+
+const {loggedInUser,setUserName}=useContext(UserContext)
+
 
 const RestaurantCardPromoted=withPromotedLabel(RestaurantCard);
 
@@ -55,7 +59,7 @@ if(onlineStatus===false){
       <div className='body'>
         <div className='filter flex items-center'>
           <div className="search m-4 p-4 ">
-            <input typy="text" className="border border-solid border-black" 
+            <input type="text" className="border border-solid border-black" 
             value={searchText} 
             onChange={(e)=>{
                 setSearchText(e.target.value)
@@ -74,6 +78,10 @@ if(onlineStatus===false){
           // console.log("button listOfRestaurant",filteredList)
           setListOfRestaurant(filteredList);
           }} >Top Rated Restaurants</button>
+          </div>
+          <div>
+            <label className="p-2">User Name</label>
+          <input typy="text" className="border border-solid border-black p-2" value={loggedInUser} onChange={(event)=>setUserName(event.target.value)}/>
           </div>
    
         </div>
