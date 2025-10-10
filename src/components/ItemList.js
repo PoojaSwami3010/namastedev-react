@@ -1,5 +1,18 @@
+import { useDispatch } from "react-redux"
+import { adddItem } from "../utils/cartSlice";
+
 const ItemList=(item)=>{
     // console.log("dummy",dummy)
+
+    const dispatch=useDispatch();
+
+    const handleAddItem=()=>{
+        console.log('click add')
+        dispatch(adddItem('pizza'))
+    }
+
+
+
     return  <div className="p-2 m-2 border-gray-200  border-b-2 text-left flex">
         {/* <ul>
             {item.map(item=>{
@@ -11,7 +24,7 @@ return   <li >{item.price}</li>
         {item.items.price}
         <p className="text-xs">{item.items.description}</p>
         </div>
-        <button className="position-relative bg-red-200 font-bold">Add +</button>
+        <button className="position-relative bg-red-200 font-bold" onClick={handleAddItem}>Add +</button>
         <div className="w-3/12">
             <img className="w-20 "  src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/9/10/eccf0a01-a230-4714-a79b-ef4aac9817c4_18bc28d0-dfbb-495e-bcd7-251c59bbf25a.jpg"/>
         </div>
