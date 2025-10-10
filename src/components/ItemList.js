@@ -9,6 +9,7 @@ const ItemList=(item)=>{
     const handleAddItem=()=>{
         console.log('click add')
         dispatch(adddItem('pizza'))
+        
     }
 
 
