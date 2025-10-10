@@ -3,6 +3,7 @@ import { LOGO_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
 import UserContext from '../utils/UserContext';
+import { useSelector } from 'react-redux';
 
 
 const Header=()=>{
@@ -18,6 +19,10 @@ useEffect(()=>{
 },[ ])
 
 const onlineStatus=useOnlineStatus();
+
+// selector (subscribing to store using selector)
+const cartItems=useSelector((store)=>store.cart.items);
+console.log("cartItems",cartItems)
 
     return (
       <div className='flex  justify-between bg-pink-100 shadow-lg '>
@@ -41,9 +46,9 @@ const onlineStatus=useOnlineStatus();
               <li className='px-1'>
               <Link to="/grocery"> Grocery</Link>
              
-              </li>
-              <li className='px-1'>
-              Cart
+              </li> 
+              <li className='px-1 font-bold text-xl'>
+              Cart ({cartItems.length}- items)
               </li>
               <button className='login' onClick={()=>{
             btnNameReact==='Login'?   setBtnNameReact('Logout'):setBtnNameReact('Login')
