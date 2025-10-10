@@ -5,6 +5,7 @@ const cartSlice=createSlice({
     initialState:{
         items:[]
     },
+    // here we have multiple reducres 
     reducers:{
         adddItem:(state,action)=>{
             // mutating the state here
