@@ -54,3 +54,14 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     Style components
     Ant Design
     Tailwind css
+
+
+# Redux Toolkit
+    -install libraries @reduxjs/toolkit , react-redux
+        -npm i @reduxjs/toolkit
+        -npm i react-redux
+    -Build our  store
+    -Connect Store to our app
+    -Create Cart Slice
+    -Dispatch action
+    -Read data using Selectior

@@ -4,6 +4,8 @@ import Header from './components/Header';
 import './style.css';
 import './index.css'
 import UserContext from './utils/UserContext';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
 
 // Cunking
 // Code splitting
@@ -28,9 +30,8 @@ export default function App() {
 
 
   return (
-    <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
-
-   
+    <Provider store={appStore}>
+    <UserContext.Provider value={{loggedInUser:userName,setUserName}}>   
     <div className="app">
     <UserContext.Provider value={{loggedInUser:'Pooja Swami'}}>
       <Header />
@@ -40,5 +41,6 @@ export default function App() {
      
     </div>
     </UserContext.Provider>
+    </Provider>
   );
 }
