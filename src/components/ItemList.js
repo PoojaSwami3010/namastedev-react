@@ -8,7 +8,7 @@ const ItemList=(item)=>{
 
     const handleAddItem=(item)=>{
         console.log('click add')
-        dispatch(adddItem(item.items.name))
+        dispatch(adddItem(item))
 
     }
 
