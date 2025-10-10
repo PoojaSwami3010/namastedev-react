@@ -5,6 +5,12 @@ import ItemList from "./ItemList";
 const Cart=()=>{
 
     const cartItem=useSelector((store)=>store.cart.items)
+
+    // both way we can do but above one is more eefiencent that below 2 lines
+
+    // const store=useSelector((store)=>store)
+    // const cartItem=store.cart.items
+
     console.log("carts items in carts page",cartItem)
 
     const dispatch=useDispatch();
