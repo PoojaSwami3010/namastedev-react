@@ -48,7 +48,8 @@ console.log("cartItems",cartItems)
              
               </li> 
               <li className='px-1 font-bold text-xl'>
-              Cart ({cartItems.length}- items)
+         
+              <Link to="/cart">     Cart ({cartItems.length}- items)</Link>
               </li>
               <button className='login' onClick={()=>{
             btnNameReact==='Login'?   setBtnNameReact('Logout'):setBtnNameReact('Login')

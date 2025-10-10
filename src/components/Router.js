@@ -6,6 +6,7 @@ import Error from '../components/Error';
 import Body from './Body';
 import ResturantMenu from './ResturantMenu';
 import { lazy, Suspense } from 'react';
+import Cart from './Cart';
 
 // Lazy load Grocery
 const GroceryLazy = lazy(() => import('./Grocery'));
@@ -19,6 +20,7 @@ const appRouter = createBrowserRouter([
       { path: '/about', element: <About /> },
       { path: '/contact', element: <Contact /> },
       { path: '/restaurant/:resId', element: <ResturantMenu /> },
+
       {
         path: '/grocery',
         element: (
@@ -26,6 +28,10 @@ const appRouter = createBrowserRouter([
             <GroceryLazy />
           </Suspense>
         )
+      }
+      ,{
+        path:'/cart',
+        element: <Cart />
       }
     ],
     errorElement: <Error />
