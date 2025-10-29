@@ -23,11 +23,11 @@ const cartSlice=createSlice({
             state.items.pop();
         },
         clearCart:(state)=>{
-            console.log(state)
-            console.log(current(state))
-            state=[]
-            console.log(state)
-            // state.items.length=0//state=[]
+            // console.log(state)
+            // console.log(current(state))
+            // state=[]
+            // console.log(state) this wont work it update state localy only state
+            state.items.length=0//state=[] this will update globally
         }
     }
 });
