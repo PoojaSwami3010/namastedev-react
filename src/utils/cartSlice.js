@@ -8,6 +8,11 @@ const cartSlice=createSlice({
     // here we have multiple reducres 
     reducers:{
         adddItem:(state,action)=>{
+
+            // Vanila (older) Redux=>Dont mutate state
+            // const newState=[...state]
+            // newState.push(action.payload)
+
             // mutating the state here
             state.items.push(action.payload)
         },
