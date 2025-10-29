@@ -85,3 +85,4 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     intslled jest
     installed babel dependecies
     configure babel added babel.config.js file 
+    https://parceljs.org/languages/javascript/#babel
