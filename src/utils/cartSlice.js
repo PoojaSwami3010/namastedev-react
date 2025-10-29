@@ -27,6 +27,8 @@ const cartSlice=createSlice({
             // console.log(current(state))
             // state=[]
             // console.log(state) this wont work it update state localy only state
+            // we can return empty array also return [];
+            // RTK says mutated the existing state or return new state
             state.items.length=0//state=[] this will update globally
         }
     }
