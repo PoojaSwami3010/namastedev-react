@@ -70,6 +70,18 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     React testing library
     https://testing-library.com/docs/react-testing-library/intro/
 
+    npm install --save-dev @testing-library/react
+
+    https://jestjs.io/docs/getting-started
+    npm install --save-dev jest
+    npm install --save-dev babel-jest @babel/core @babel/preset-env
+
     -Unit Testing
     -Integration testing
     -End to end testing - e2e testing
+
+
+    Intsalled react testing library
+    intslled jest
+    installed babel dependecies
+    configure babel added babel.config.js file 
