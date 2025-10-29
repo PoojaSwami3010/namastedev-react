@@ -67,6 +67,8 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     -Read data using Selectior
 
 # Types of testing
+    React testing library
+    https://testing-library.com/docs/react-testing-library/intro/
 
     -Unit Testing
     -Integration testing
