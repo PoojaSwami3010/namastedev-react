@@ -13,6 +13,8 @@ const cartSlice=createSlice({
             // const newState=[...state]
             // newState.push(action.payload)
 
+            // Redux tookkit uses immer Bts
+
             // mutating the state here
             state.items.push(action.payload)
         },
