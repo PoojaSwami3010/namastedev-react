@@ -65,3 +65,9 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     -Create Cart Slice
     -Dispatch action
     -Read data using Selectior
+
+# Types of testing
+
+    -Unit Testing
+    -Integration testing
+    -End to end testing - e2e testing
