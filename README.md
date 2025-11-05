@@ -90,3 +90,4 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     configure parcelrc file To disable Babel transpilation in Parcel, 
     npm run test
     Jest Configuration
+        npx jest init
