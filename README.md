@@ -92,3 +92,5 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     Jest Configuration
         npx jest --init
     install jsdom library  if jest version greater than 28 npm install --save-dev jest-environment-jsdom
+    install npm install --save-dev @babel/preset-react
+    Include  @babel/preset-react into babelconfig
