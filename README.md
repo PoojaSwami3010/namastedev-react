@@ -94,3 +94,4 @@ https://stackblitz.com/~/github.com/PoojaSwami3010/namastedev-react?file=src/com
     install jsdom library  if jest version greater than 28 npm install --save-dev jest-environment-jsdom
     install npm install --save-dev @babel/preset-react
     Include  @babel/preset-react into babelconfig
+    Install testing-library/jest-dom
