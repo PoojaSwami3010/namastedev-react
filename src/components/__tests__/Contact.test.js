@@ -15,6 +15,15 @@ test("Should Load button inside contact us component",()=>{
     render(<Contact/>)
 
     // const button=screen.getByText("random");//this will fail
-    const button=screen.getByText("Submit");// this will work
+    const button=screen.getByRole("button");// this will work
     expect(button).toBeInTheDocument();
+})
+
+
+test("Should Load button inside contact us component",()=>{
+    render(<Contact/>)
+
+    // const button=screen.getByText("random");//this will fail
+    const placeholder=screen.getByPlaceholderText("Name");// this will work
+    expect(placeholder).toBeInTheDocument();
 })
