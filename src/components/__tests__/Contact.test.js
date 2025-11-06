@@ -3,8 +3,8 @@ import Contact from "../Contact";
 import "@testing-library/jest-dom"
 
 describe("Contact us Pages test cases",()=>{
- 
-test("Should Load contact us component",()=>{
+//  insted of test we can write it
+it("Should Load contact us component",()=>{
     render(<Contact/>)
 
     const heading=screen.getByRole("heading");
