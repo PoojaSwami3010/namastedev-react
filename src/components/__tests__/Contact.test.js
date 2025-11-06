@@ -14,6 +14,7 @@ test("Should Load contact us component",()=>{
 test("Should Load button inside contact us component",()=>{
     render(<Contact/>)
 
-    const button=screen.getByText("random");
+    // const button=screen.getByText("random");//this will fail
+    const button=screen.getByText("Submit");// this will work
     expect(button).toBeInTheDocument();
 })
