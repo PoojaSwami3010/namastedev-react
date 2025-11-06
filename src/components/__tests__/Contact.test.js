@@ -20,10 +20,20 @@ test("Should Load button inside contact us component",()=>{
 })
 
 
-test("Should Load button inside contact us component",()=>{
+test("Should Load placeholder inside contact us component",()=>{
     render(<Contact/>)
 
     // const button=screen.getByText("random");//this will fail
     const placeholder=screen.getByPlaceholderText("Name");// this will work
     expect(placeholder).toBeInTheDocument();
+})
+
+
+test("Should Load 2 input boxes contact us component",()=>{
+    render(<Contact/>)
+
+    // const button=screen.getByText("random");//this will fail
+    const inputBoxes=screen.getAllByRole("textbox");// this will work
+    console.log(inputBoxes.length)
+    expect(inputBoxes.length).toBe(2);
 })
