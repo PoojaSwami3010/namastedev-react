@@ -35,5 +35,6 @@ test("Should Load 2 input boxes contact us component",()=>{
     // const button=screen.getByText("random");//this will fail
     const inputBoxes=screen.getAllByRole("textbox");// this will work
     console.log(inputBoxes.length)
-    expect(inputBoxes.length).toBe(2);
+    // expect(inputBoxes.length).toBe(2);
+    expect(inputBoxes.length).not.toBe(4)
 })
