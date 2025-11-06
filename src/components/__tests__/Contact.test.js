@@ -2,7 +2,7 @@ import { render ,screen} from "@testing-library/react";
 import Contact from "../Contact";
 import "@testing-library/jest-dom"
 
-describe("Contactus Pages test cases",()=>{
+describe("Contact us Pages test cases",()=>{
  
 test("Should Load contact us component",()=>{
     render(<Contact/>)
