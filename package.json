@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/preset-react": "^7.28.5",
     "@reduxjs/toolkit": "^2.9.0",
