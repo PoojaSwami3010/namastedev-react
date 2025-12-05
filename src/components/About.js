@@ -18,8 +18,9 @@ class About extends React.Component{
         // console.log("Parent componet did mount")
     }
 
+
     render(){
-        // console.log("Parent render")
+        console.log("Parent render")
   
     return (
         <div>
