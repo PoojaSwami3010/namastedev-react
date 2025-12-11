@@ -12,7 +12,7 @@ global.fetch=jest.fn(()=>{
     });
 });
 
-it("should render the Body component with serach button",async ()=>{   
+it("should renderSearch Res List for Dosa text input",async ()=>{   
     await act(async()=> render(
         <BrowserRouter>
          <Body/>
