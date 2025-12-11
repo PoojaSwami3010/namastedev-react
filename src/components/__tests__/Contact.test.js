@@ -3,6 +3,21 @@ import Contact from "../Contact";
 import "@testing-library/jest-dom"
 
 describe("Contact us Pages test cases",()=>{
+
+    afterAll(()=>{
+        console.log("After all test cases in Contact us component")
+    })
+
+    afterEach(()=>{
+        console.log("After each test case in Contact us component")
+    })
+    beforeAll(()=>{
+        console.log("Before all test cases in Contact us component")
+    })
+
+    beforeEach(()=>{
+        console.log("Before each test case in Contact us component")
+    })
 //  insted of test we can write it
 it("Should Load contact us component",()=>{
     render(<Contact/>)
