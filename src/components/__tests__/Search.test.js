@@ -21,7 +21,8 @@ it("should render the Body component with serach button",async ()=>{
 ));
     const searchButton=screen.getByRole("button", { name: "Search"});
     const serachInput=screen.getByTestId("search-input");
-    fireEvent.change(serachInput, { target: { value: "burger" } });
+    fireEvent.change(serachInput, { target: { value: "dosa" } });
     fireEvent.click(searchButton);
-    expect(searchButton).toBeInTheDocument();
+   const cards = screen.getAllByTestId("restaurant-card");
+    expect(cards.length).toBe(1);
 })
