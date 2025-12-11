@@ -8,6 +8,7 @@ it("should render Header Component with cart itnems 0",() => {
         <BrowserRouter>
         <Provider store={appStore
         }>
+            
             <Header />
             </Provider></BrowserRouter>
     );
