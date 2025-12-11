@@ -23,7 +23,7 @@ export default function App() {
 
   useEffect(()=>{
     const data ={
-      name:"Pooja Swami"
+      name:"Pooja Swami 30"
     }
     setUserName(data.name)
   })
@@ -33,7 +33,7 @@ export default function App() {
     <Provider store={appStore}>
     <UserContext.Provider value={{loggedInUser:userName,setUserName}}>   
     <div className="app">
-    <UserContext.Provider value={{loggedInUser:'Pooja Swami'}}>
+    <UserContext.Provider value={{loggedInUser:'Pooja Swami 30'}}>
       <Header />
       </UserContext.Provider>
       {/* this outlet filled with whatever component we have in chirdern with routes */}

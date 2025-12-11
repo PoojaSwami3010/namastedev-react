@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[70],{70:(e,c,n)=>{n.r(c),n.d(c,{default:()=>s});var r=n(579);const s=()=>(0,r.jsx)("h1",{children:"Our Grocery online store, and we have lot of child component inside this web page!!!!"})}}]);
+//# sourceMappingURL=70.f9538875.chunk.js.map
