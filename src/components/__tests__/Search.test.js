@@ -19,10 +19,12 @@ it("should render the Body component with serach button",async ()=>{
         </BrowserRouter>
    
 ));
+ const cardsBeforeSaerch = screen.getAllByTestId("restaurant-card");
+ expect(cardsBeforeSaerch.length).toBe(15);
     const searchButton=screen.getByRole("button", { name: "Search"});
     const serachInput=screen.getByTestId("search-input");
     fireEvent.change(serachInput, { target: { value: "dosa" } });
     fireEvent.click(searchButton);
-   const cards = screen.getAllByTestId("restaurant-card");
-    expect(cards.length).toBe(1);
+   const cardsAfterSearch = screen.getAllByTestId("restaurant-card");  
+    expect(cardsAfterSearch.length).toBe(1);
 })
