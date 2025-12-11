@@ -1,5 +1,6 @@
 import { Provider } from "react-redux"
 import { BrowserRouter } from "react-router"
+import "@testing-library/jest-dom"
 
 ImageTrack("should render Header Component with cart itnems 0",() => {
     render(
