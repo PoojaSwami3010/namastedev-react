@@ -60,6 +60,7 @@ if(onlineStatus===false){
         <div className='filter flex items-center'>
           <div className="search m-4 p-4 ">
             <input type="text" className="border border-solid border-black" 
+            data-testid="search-input"
             value={searchText} 
             onChange={(e)=>{
                 setSearchText(e.target.value)
